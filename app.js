@@ -1,4 +1,27 @@
-// Configuración de Firebase
+npm install firebase
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDKYrqcbDrMcx90j3Fvswud7fQsBbQR0oE",
+  authDomain: "curd-43abb.firebaseapp.com",
+  projectId: "curd-43abb",
+  storageBucket: "curd-43abb.firebasestorage.app",
+  messagingSenderId: "221485674882",
+  appId: "1:221485674882:web:f46df0f6368d9704ad5f9b",
+  measurementId: "G-X86PKN6FVR"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
 const firebaseConfig = {
     apiKey: "TU_API_KEY",
     authDomain: "TU_AUTH_DOMAIN",
